@@ -1,0 +1,16 @@
+export default {
+  label: '中文', locale: 'zh-CN', all: '全部', recent: '最近',
+  total: n => `${n} 个颜文字`,
+  results: (_, n) => `${n} 个结果`,
+  searchPlaceholder: '搜索：猫咪、抱抱、大笑…', searchLabel: '搜索颜文字',
+  categories: '颜文字分类', panel: '颜文字面板',
+  open: '打开颜文字', openTitle: '打开颜文字 — 拖动可移动',
+  close: '关闭面板', settings: '设置', language: '语言',
+  insert: face => `插入 ${face}`,
+  emptyTitle: '没有结果', emptyAll: '换个词试试，比如“猫咪”或“抱抱”。',
+  emptyIn: name => `“${name}”中没有结果。试试“全部”。`,
+  footer: '拖动按钮可移动 · 按 Esc 关闭',
+  added: '已添加到消息', noChat: '请先打开聊天再插入颜文字。',
+  tooLong: '消息太长，无法添加这个颜文字。',
+  noSave: '此浏览器无法记住位置。',
+};

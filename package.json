@@ -1,0 +1,22 @@
+{
+  "name": "bc-kaomoji",
+  "version": "2.1.1",
+  "description": "A draggable kaomoji panel for the Bondage Club chat.",
+  "private": true,
+  "type": "module",
+  "main": "dist/bundle.js",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "watch": "node scripts/build.mjs --watch",
+    "serve": "node scripts/build.mjs --serve"
+  },
+  "author": "Stro0dle",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stro0dle/bc-kaomoji.git"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
+}

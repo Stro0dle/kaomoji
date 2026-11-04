@@ -1,0 +1,63 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main, dev]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: main
+
+      - name: Checkout dev
+        uses: actions/checkout@v4
+        with:
+          ref: dev
+          path: dev
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Build stable
+        working-directory: main
+        run: npm ci && npm run build
+
+      - name: Build dev
+        working-directory: dev
+        run: npm ci && npm run build
+
+      - name: Assemble site
+        run: |
+          mkdir -p site/dev
+          cp main/dist/bundle.js site/bundle.js
+          cp dev/dist/bundle.js site/dev/bundle.js
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

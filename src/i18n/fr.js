@@ -1,0 +1,16 @@
+export default {
+  label: 'Français', locale: 'fr-FR', all: 'Tout', recent: 'Récents',
+  total: n => `${n} expressions`,
+  results: (count, n) => `${n} résultat${count > 1 ? 's' : ''}`,
+  searchPlaceholder: 'Rechercher : chat, câlin, mdr…', searchLabel: 'Rechercher un kaomoji',
+  categories: 'Catégories de kaomoji', panel: 'Panneau de kaomoji',
+  open: 'Ouvrir les kaomoji', openTitle: 'Ouvrir les kaomoji — déplacer en faisant glisser',
+  close: 'Fermer le panneau', settings: 'Paramètres', language: 'Langue',
+  insert: face => `Insérer ${face}`,
+  emptyTitle: 'Aucun résultat', emptyAll: 'Essaie un autre mot, comme « chat » ou « câlin ».',
+  emptyIn: name => `Rien dans « ${name} ». Essaie la catégorie Tout.`,
+  footer: 'Glisser le bouton pour le déplacer · Échap pour fermer',
+  added: 'Ajouté au message', noChat: "Ouvre d'abord un chat pour insérer un kaomoji.",
+  tooLong: 'Le message est trop long pour ajouter ce kaomoji.',
+  noSave: 'La position ne peut pas être mémorisée dans ce navigateur.',
+};

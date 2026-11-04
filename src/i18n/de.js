@@ -1,0 +1,16 @@
+export default {
+  label: 'Deutsch', locale: 'de-DE', all: 'Alle', recent: 'Zuletzt',
+  total: n => `${n} Kaomoji`,
+  results: (count, n) => `${n} ${count === 1 ? 'Ergebnis' : 'Ergebnisse'}`,
+  searchPlaceholder: 'Suchen: Katze, Umarmung, Lachen…', searchLabel: 'Kaomoji suchen',
+  categories: 'Kaomoji-Kategorien', panel: 'Kaomoji-Bereich',
+  open: 'Kaomoji öffnen', openTitle: 'Kaomoji öffnen — zum Verschieben ziehen',
+  close: 'Bereich schließen', settings: 'Einstellungen', language: 'Sprache',
+  insert: face => `${face} einfügen`,
+  emptyTitle: 'Keine Ergebnisse', emptyAll: 'Versuch ein anderes Wort, etwa „Katze“ oder „Umarmung“.',
+  emptyIn: name => `Nichts in „${name}“. Versuch es mit Alle.`,
+  footer: 'Knopf ziehen zum Verschieben · Esc zum Schließen',
+  added: 'Zur Nachricht hinzugefügt', noChat: 'Öffne zuerst einen Chat, um ein Kaomoji einzufügen.',
+  tooLong: 'Die Nachricht ist zu lang für dieses Kaomoji.',
+  noSave: 'Dieser Browser kann die Position nicht speichern.',
+};

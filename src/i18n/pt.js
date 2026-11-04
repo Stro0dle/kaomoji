@@ -1,0 +1,16 @@
+export default {
+  label: 'Português', locale: 'pt-BR', all: 'Tudo', recent: 'Recentes',
+  total: n => `${n} expressões`,
+  results: (count, n) => `${n} resultado${count === 1 ? '' : 's'}`,
+  searchPlaceholder: 'Buscar: gato, abraço, risada…', searchLabel: 'Buscar um kaomoji',
+  categories: 'Categorias de kaomoji', panel: 'Painel de kaomoji',
+  open: 'Abrir os kaomoji', openTitle: 'Abrir os kaomoji — arraste para mover',
+  close: 'Fechar o painel', settings: 'Configurações', language: 'Idioma',
+  insert: face => `Inserir ${face}`,
+  emptyTitle: 'Nenhum resultado', emptyAll: 'Tente outra palavra, como “gato” ou “abraço”.',
+  emptyIn: name => `Nada em “${name}”. Tente Tudo.`,
+  footer: 'Arraste o botão para movê-lo · Esc para fechar',
+  added: 'Adicionado à mensagem', noChat: 'Abra um chat primeiro para inserir um kaomoji.',
+  tooLong: 'A mensagem é longa demais para este kaomoji.',
+  noSave: 'Este navegador não consegue lembrar a posição.',
+};

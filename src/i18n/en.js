@@ -1,0 +1,16 @@
+export default {
+  label: 'English', locale: 'en-US', all: 'All', recent: 'Recent',
+  total: n => `${n} kaomoji`,
+  results: (count, n) => `${n} result${count === 1 ? '' : 's'}`,
+  searchPlaceholder: 'Search: cat, hug, lol…', searchLabel: 'Search kaomoji',
+  categories: 'Kaomoji categories', panel: 'Kaomoji panel',
+  open: 'Open kaomoji', openTitle: 'Open kaomoji — drag to move',
+  close: 'Close panel', settings: 'Settings', language: 'Language',
+  insert: face => `Insert ${face}`,
+  emptyTitle: 'No results', emptyAll: 'Try another word, like “cat” or “hug”.',
+  emptyIn: name => `Nothing in “${name}”. Try All.`,
+  footer: 'Drag the button to move it · Esc to close',
+  added: 'Added to your message', noChat: 'Open a chat first to insert a kaomoji.',
+  tooLong: 'The message is too long for this kaomoji.',
+  noSave: 'This browser can’t remember the position.',
+};
