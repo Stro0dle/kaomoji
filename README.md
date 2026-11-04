@@ -9,21 +9,21 @@ A draggable kaomoji panel for the Bondage Club chat. Click an expression and it 
 
 ### TamperMonkey install:
 **Stable:**
-https://github.com/Stro0dle/bc-kaomoji/raw/main/bcKaomojiLoader.user.js
+https://github.com/Stro0dle/kaomoji/raw/main/bcKaomojiLoader.user.js
 
 **Dev:**
-https://github.com/Stro0dle/bc-kaomoji/raw/dev/bcKaomojiLoader-dev.user.js
+https://github.com/Stro0dle/kaomoji/raw/dev/bcKaomojiLoader-dev.user.js
 
 Install [Tampermonkey](https://www.tampermonkey.net/), open one of the links above and click **Install**. Then open or reload Bondage Club and join a chat room. Install only one of the two.
 
 ### Bookmark:
 **Stable:**
 ```
-javascript:(()=>{fetch('https://stro0dle.github.io/bc-kaomoji/bundle.js').then(r=>r.text()).then(r=>eval(r));})();
+javascript:(()=>{fetch('https://stro0dle.github.io/kaomoji/bundle.js').then(r=>r.text()).then(r=>eval(r));})();
 ```
 **Dev:**
 ```
-javascript:(()=>{fetch('https://stro0dle.github.io/bc-kaomoji/dev/bundle.js').then(r=>r.text()).then(r=>eval(r));})();
+javascript:(()=>{fetch('https://stro0dle.github.io/kaomoji/dev/bundle.js').then(r=>r.text()).then(r=>eval(r));})();
 ```
 
 ## Features

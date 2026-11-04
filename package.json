@@ -1,5 +1,5 @@
 {
-  "name": "bc-kaomoji",
+  "name": "kaomoji",
   "version": "2.1.1",
   "description": "A draggable kaomoji panel for the Bondage Club chat.",
   "private": true,
@@ -14,7 +14,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Stro0dle/bc-kaomoji.git"
+    "url": "git+https://github.com/Stro0dle/kaomoji.git"
   },
   "devDependencies": {
     "esbuild": "^0.28.2"
